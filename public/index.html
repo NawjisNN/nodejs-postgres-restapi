@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Interface</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            margin-top: 20px;
+        }
+
+        .result-box {
+            margin-top: 10px;
+        }
+
+        .response {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>API Interface</h1>
+        <!-- Column headers -->
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Action</h2>
+            </div>
+            <div class="col-md-4">
+                <h2>Request</h2>
+            </div>
+            <div class="col-md-4">
+                <h2>Response</h2>
+            </div>
+        </div>
+        <!-- Column content -->
+        <div class="row">
+            <!-- Column for the button -->
+            <div class="col-md-4">
+                <div class="list-group">
+                    <button class="list-group-item list-group-item-action" onclick="getAllUsers()">Get All Users</button>
+                    <button class="list-group-item list-group-item-action" onclick="getUserById()">Get User By ID</button>
+                    <button class="list-group-item list-group-item-action" onclick="createUser()">Create User </button>
+                    <button class="list-group-item list-group-item-action" onclick="updateUser()">Update User</button>
+                    <button class="list-group-item list-group-item-action" onclick="deleteUser()">Delete User</button>
+
+                    <button class="list-group-item list-group-item-action" onclick="getAllTexts()" style="color: red;">Get All Texts</button>
+                    <button class="list-group-item list-group-item-action" onclick="getTextById()" style="color: red;">Get Texts By ID</button>
+                    <button class="list-group-item list-group-item-action" onclick="createText()" style="color: red;">Create Texts </button>
+                    <button class="list-group-item list-group-item-action" onclick="updateText()" style="color: red;">Update Texts</button>
+                    <button class="list-group-item list-group-item-action" onclick="deleteText()" style="color: red;">Delete Texts</button>
+
+                    <button class="list-group-item list-group-item-action" onclick="getWordCount()" style="color: blue;">Get Word Count</button>
+                    <button class="list-group-item list-group-item-action" onclick="getCharacterCount()" style="color: blue;">Get Character Count</button>
+                    <button class="list-group-item list-group-item-action" onclick="getSentenceCount()" style="color: blue;">Get Sentence Count</button>
+                    <button class="list-group-item list-group-item-action" onclick="getParagraphCount()" style="color: blue;">Get Paragraph Count</button>
+                    <button class="list-group-item list-group-item-action" onclick="getLongestWords()" style="color: blue;">Get Longest Words</button>
+                </div>
+            </div>
+            <!-- Column for the request body -->
+            <div class="col-md-4">
+                
+                <div id="getAllUsersRequest" class="result-box"></div>
+                <div id="getUserByIdRequest" class="result-box"></div>
+                <div id="createUserRequest" class="result-box"></div>
+                <div id="updateUserRequest" class="result-box"></div>
+                <div id="deleteUserRequest" class="result-box"></div>
+
+                <div id="getAllTextsRequest" class="result-box"></div>
+                <div id="getTextByIdRequest" class="result-box"></div>
+                <div id="createTextRequest" class="result-box"></div>
+                <div id="updateTextRequest" class="result-box"></div>
+                <div id="deleteTextRequest" class="result-box"></div>
+
+                <div id="getWordCountRequest" class="result-box"></div>
+                <div id="getCharacterCountRequest" class="result-box"></div>
+                <div id="getSentenceCountRequest" class="result-box"></div>
+                <div id="getParagraphCountRequest" class="result-box"></div>
+                <div id="getLongestWordsRequest" class="result-box"></div>
+            </div>
+            <!-- Column for the response body -->
+            <div class="col-md-4">
+                <div id="getAllUsersResponse" class="result-box response"></div>
+                <div id="getUserByIdResponse" class="result-box response"></div>
+                <div id="createUserResponse" class="result-box response"></div>
+                <div id="updateUserResponse" class="result-box response"></div>
+                <div id="deleteUserResponse" class="result-box response"></div>
+
+                <div id="getAllTextsResponse" class="result-box response"></div>
+                <div id="getTextByIdResponse" class="result-box response"></div>
+                <div id="createTextResponse" class="result-box response"></div>
+                <div id="updateTextResponse" class="result-box response"></div>
+                <div id="deleteTextResponse" class="result-box response"></div>
+
+                <div id="getWordCountResponse" class="result-box response"></div>
+                <div id="getCharacterCountResponse" class="result-box response"></div>
+                <div id="getSentenceCountResponse" class="result-box response"></div>
+                <div id="getParagraphCountResponse" class="result-box response"></div>
+                <div id="getLongestWordsResponse" class="result-box response"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load external script file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
