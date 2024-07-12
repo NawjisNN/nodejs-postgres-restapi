@@ -1,14 +1,13 @@
-<<<<<<< HEAD
+
 # Build a Text Analyzer Tool
 =======
 # Build a text analyzer tool.
->>>>>>> df1f7d5d462107e85f5c04a67703d3c017de3f8b
+
 
 ## Features
 - Responsive HTML with Bootstrap
 - Bootstrap for styling
 - Node.js for Backend
-<<<<<<< HEAD
 - JavaScript for Frontend
 - Database management system (PostgreSQL)
 - Testing framework (Jest)
@@ -29,7 +28,7 @@ Ensure you have [Node.js](https://nodejs.org/) installed on your system to use `
 
 
 # Clone the repository
->>>>>>> df1f7d5d462107e85f5c04a67703d3c017de3f8b
+
 
 ```bash
 git clone https://your-repository-link
@@ -46,18 +45,17 @@ npm install
 
 ### PostgreSQL Setup
 
-<<<<<<< HEAD
 To run this project, PostgreSQL is required. Here are the steps to install and set up PostgreSQL:
 =======
 To run this project, PostgreSQL is required. Here are the steps to install and set up PostgreSQL
->>>>>>> df1f7d5d462107e85f5c04a67703d3c017de3f8b
+
 
 1. **Download the Installer**  
    Download the Windows installer from the [official PostgreSQL website](https://www.postgresql.org/download/windows/).
 
 2. **Execute the Installer**  
    Run the downloaded installer, which includes:
-<<<<<<< HEAD
+
     - **PostgreSQL Server**: The main database component.
     - **pgAdmin**: A graphical tool for managing and developing your databases.
 
